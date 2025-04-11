@@ -7,4 +7,90 @@
 body {
     height: 100vh;
     background: rgb(58, 56, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.iconbar {
+    position: relative;
+    height: 120px;
+    width: 500px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.iconbar ul {
+    position: relative;
+    display: flex;
+    
+}
+
+.iconbar ul li {
+    position: relative;
+    list-style-type: none;
+
+    & a {
+        position: relative;
+        height: 120px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+        & i {
+            color:blueviolet;
+            font-size: 38px;
+            position: absolute;
+        }
+    }
+
+}
+
+.activeIcon { 
+    opacity: 0;
+}
+
+.iconbar ul li.instagram a i {
+    opacity: 1;  
+}
+
+.indicator {
+    position: absolute;
+    bottom: -19px;
+    left: 34px;
+    width: 25px;
+    height: 36px;
+    background: blueviolet;
+    border-radius: 50%;
+}
+
+.indicator::before { 
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom:  50%;
+    height: 22px;
+    width: 20px;
+    background: white;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px o blueviolet;
+}
+
+.indicator::after { 
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom:  50%;
+    height: 22px;
+    width: 20px;
+    background: white;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 10px o blueviolet;
+}
+
