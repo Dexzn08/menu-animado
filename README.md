@@ -14,12 +14,12 @@ JavaScript for interactivity
 - No external libraries required  
 
 ## 📥 How to Use  
-Clone the repository:  
+1. Clone the repository:  
 ```bash
 git clone https://github.com/Dexzn08/menu-animado-interativo.git
 ```
 
-Open index.html in your browser.
+2. Open index.html in your browser.
 
 # 📫 Contact
 
